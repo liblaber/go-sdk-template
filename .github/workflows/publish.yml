@@ -14,6 +14,8 @@ jobs:
     steps:        
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        persist-credentials: false
 
     - name: Read module name
       id: read_module_name
